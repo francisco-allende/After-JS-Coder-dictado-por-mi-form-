@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS + bootstrap + google fonts api-->
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+
+    <title>After 19/6</title>
+</head>
+<body>
+
+    <div class="d-flex" style="justify-content: center; margin-top: 1em;">
+        <button type="button" class="btn btn-primary" id="btn_crear_form">Crea tu formulario!</button>
+    </div>
+  
+
+    <!--Formulario-->
+<div style="margin: 1em; border-radius: 1em; display: none;" class="ventana_formulario_completa" id="div_show_form">
+    <h1 style="text-align: center; color: #1a1110; margin-bottom: 1em !important">Estas a solo un paso de finalizar tu compra! </h1>
+    <div class='window' style="background-color: #fdf5f5;">
+      <div class='order-info'>   
+        <div class='order-info-content'>
+          <div class="container" style="width: 50%">
+            <div class="container" style="display:flex; justify-content: center; margin-top: 1em;">
+                <form id="formulario">
+                    <h2 align="center" style="margin-top: 2em; margin-bottom: 1.8em; color: #1a1110">Finalizá tu compra</h2>
+                    <div class="formulario_original">
+                        <h5>Nombre completo</h5>
+                            <input type="text" id="nombre">
+                        <h5>Número de teléfono</h5>
+                            <input type="number" id="telefono">
+                        <h5>Dirección</h5>
+                            <input type="text" id="direccion">
+                    </div>
+                </form>
+            </div>
+          </div>
+  </div>
+  </div>
+          <div class='credit-info'>
+            <div class='credit-info-content'>
+              <table class='half-input-table'>
+                <tr><h5 style=" text-align: center;">Por favor seleccione su tarjeta:</h5>
+                    <td><div class='dropdown' id='card-dropdown' style="border: 1px solid #fff; border-radius: 1em; width: 50%; margin-left: 25%;"><div class='dropdown-btn' id='current-card' style="font-size: medium;">Visa</div>
+                  <div class='dropdown-select' style="background-color: rgb(139, 0, 52, 1); border: 1px solid #fff; width: 100%; border-radius: 1em; text-align: left;">
+                  <ul>
+                    <li style="font-size: medium;" id="master_hover">Master Card</li>
+                    <li style="font-size: medium;" id="american_hover">American Express</li>
+                    </ul></div>
+                  </div>
+                 </td></tr>
+              </table>
+              <img src='https://dl.dropboxusercontent.com/s/ubamyu6mzov5c80/visa_logo%20%281%29.png' height='80' class='credit-card-image' id='credit-card-image'></img>
+              <td><h5>Número de la tarjeta</h5></td>
+              <input class='input-field' id="nro_tarjeta" type="number" style="height: 1.4em;"></input>
+              <td><h5 style="margin-top: 1em;">Nombre del titular de la tarjeta</h5></td>
+              <input class='input-field' id="nombre_titular" style="height: 1.4em;"></input>
+              <table class='half-input-table'>
+                <tr>
+                  <td><h5 style="margin-top: .8em;">Fecha de expiración</h5>
+                    <input class='input-field' id="expiracion" type="date" style="width: 90%; height: 1.4em;"></input>
+                  </td>
+                  <td><h5 style="margin-top: .8em;">CVV</h5>
+                    <input class='input-field' id="codigo_seguridad" type="number" style="height: 1.4em;"></input>
+                  </td>
+                </tr>
+              </table>
+              <p align="center"><button type="button" class="btn btn-success" id="btnConfirmarCompra">Confirmar compra</button></p>
+            </div>
+          </div>
+        </div>
+  </div>
+</div>
+<br>
+<!--Fin formulario-->
+
+<!--DOM COMPRA-->
+    <div id="compra_exitosa" style="margin: auto; padding: 5%; text-align:center; background-color: rgb(39, 230, 39); font-family: Arial, Helvetica, sans-serif; display: none;"></div>
+
+    <div class="d-flex" style="justify-content: center; margin-top: 1em;">
+        <button type="button" class="btn btn-primary" id="borrar_datos_form" style="display: none;">Borrar datos del form</button>
+    </div>
+
+
+    <!--JS + JQUERY + JSON-->
+    <script src="jquery/jquery-3.6.0.min.js"></script>
+    <script src="js/dropdownAnimation.js"></script>
+    <script src="js/form.js"></script>
+    <script src="json/test.json"></script>
+</body>
+</html>
