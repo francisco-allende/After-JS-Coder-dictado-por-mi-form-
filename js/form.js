@@ -80,6 +80,7 @@
     
     
 
+   /* Descomentar para activar metodo change. Borrar alert de la linea 57
   //Method.change --> guarda en el local storage los datos antes de darle a confirmar
   nombre.change(guardoDatosCargados),
   telefono.change(guardoDatosCargados),
@@ -88,6 +89,7 @@
   nombreTitular.change(guardoDatosCargados),
   expiracion.change(guardoDatosCargados),
   codigoSeguridad.change(guardoDatosCargados)
+  */
 
 
   
