@@ -1,7 +1,7 @@
 # After-JS-Coder-dictado-por-mi-form-
-Funcion principal: Un cliente guarda datos en un formulario, se validan y se guardan en el localStorage  
+Funcion principal: Un cliente guarda datos en un formulario, se validan y se guardan en el localStorage.  
 
-Tecnologias usadas: JS, jQuery, localStorage, Bootstrap, CSS, HTML  
+Tecnologias usadas: JS, jQuery, localStorage, Bootstrap, CSS, HTML.  
 
 Utilizacion en JS + jQuery de:  
   - Selectores con DOM  
@@ -9,5 +9,5 @@ Utilizacion en JS + jQuery de:
   - Metodos  
   - Animaciones  
   - Validacion  
-  - Guardar datos del formulario en el localStorage
-  - Borrar datos del localStorage
+  - Guardar datos del formulario en el localStorag
+  - Borrar datos del localStorage.
