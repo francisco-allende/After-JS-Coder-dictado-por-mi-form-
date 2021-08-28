@@ -10,3 +10,4 @@ Utilizacion en JS + jQuery de:
   - Animaciones  
   - Validacion  
   - Guardar datos del formulario en el localStorage
+  - Borrar datos del localStorage
